@@ -9,10 +9,10 @@ public class TestOne extends TestBase {
 	
 	@Test
 	public static void Login() {
-		driver.manage().window().maximize();
-		driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");
-		driver.findElement(By.cssSelector("#password")).sendKeys("secret_sauce");
-		driver.findElement(By.cssSelector("#login-button")).click();
+//		driver.manage().window().maximize();
+//		driver.findElement(By.cssSelector(loc.getProperty("username"))).sendKeys("standard_user");
+//		driver.findElement(By.cssSelector("#password")).sendKeys("secret_sauce");
+//		driver.findElement(By.cssSelector("#login-button")).click();
 		
 	}
 	@Test

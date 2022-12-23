@@ -16,13 +16,16 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties pro = new Properties();
+	public static Properties loc = new Properties();
 	
 	@BeforeTest
 	public void SetUp() throws IOException {
 		if(driver == null) {
 			//System.out.println(System.getProperty("user.dir"));
 			FileInputStream input = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\configFiles\\config.properties");
+			FileInputStream input2 = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\configFiles\\locators.properties");
 			pro.load(input);
+			loc.load(input2);
 			System.out.println(pro.getProperty("browser"));
 		}
 		
